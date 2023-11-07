@@ -18,20 +18,20 @@ const slides = [
 ]
 
 
-//Création des breakpoints
+//Création des BulletPoints
 let dotContainer = document.querySelector("#banner .dots")
-function addBreakPoints() {
+function addBulletPoints() {
 	for(let i = 0; i < slides.length; i++ ) {
 		//création de la div .dot
-	const breakpoint = document.createElement("div")
+	const bulletpoint = document.createElement("div")
 	//ajout de la classe .dot à la div
-	breakpoint.classList.add("dot")
+	bulletpoint.classList.add("dot")
 	//placement de la div dans le container .dots
-	dotContainer.appendChild(breakpoint)
+	dotContainer.appendChild(bulletpoint)
 	}
 }
 //appel de la fonction
-addBreakPoints()
+addBulletPoints()
 console.log(dotContainer)
 
 //définir la position dans le slider
